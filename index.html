@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Delights</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bee Delights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center" id="home" style="background: url('img/hero-bg.jpg') no-repeat center center/cover;">
+        <div class="container text-center text-white">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Welcome to Bee Delights</h1>
+            <p class="lead">Experience the taste of elegance and culinary art</p>
+            <a href="#menu" class="btn btn-primary mt-3">Explore Our Menu</a><br>
+            <a href="#contact" class="btn btn-primary mt-3">Hey,Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <h2 class="text-center">Our Menu</h2>
+            <p class="text-center text-muted">Indulge in our exquisite selection of dishes</p>
+            <div class="row text-center g-4 mt-4">
+                <!-- Appetizers -->
+                <div class="col-md-4">
+                    <h3>Appetizers</h3>
+                    <img src="img/appetizers.jpg" alt="Appetizers" class="menu-image">
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">Bruschetta - $8</li>
+                        <li class="list-group-item">Caesar Salad - $9</li>
+                    </ul>
+                </div>
+                <!-- Mains -->
+                <div class="col-md-4">
+                    <h3>Mains</h3>
+                    <img src="img/mains.jpg" alt="Mains" class="menu-image">
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">Grilled Salmon - $18</li>
+                        <li class="list-group-item">Pasta Primavera - $15</li>
+                    </ul>
+                </div>
+                <!-- Desserts -->
+                <div class="col-md-4">
+                    <h3>Desserts</h3>
+                    <img src="img/desserts.jpg" alt="Desserts" class="menu-image">
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">Chocolate Lava Cake - $7</li>
+                        <li class="list-group-item">Tiramisu - $6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section bg-light py-5">
+        <div class="container text-center">
+            <h2>Customer Testimonials</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>"Absolutely amazing experience! The food and ambiance were perfect."</p>
+                            <h5 class="card-title">- John Dias</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>"The best restaurant in town! Highly recommend to everyone."</p>
+                            <h5 class="card-title">- Cloud Fernanado</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Bee Delights. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
